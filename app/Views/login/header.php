@@ -16,11 +16,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <?php if (session()->get('isLoggedIn')) { ?>  
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<?php echo base_url("login");?>">Login</a>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href=<?php echo base_url('dashboard');?>>Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url("signup");?>">Register</a>
+                <a class="nav-link" href=<?php echo base_url('task');?> >Add Task</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href=<?php echo base_url('logout');?>>Logout</a>
+              </li>
               </li>
               <?php } else { ?>
                 <li class="nav-item">
