@@ -10,28 +10,29 @@
                     Register
                 </div>
                 <div class="text-start card-body">
+                    <form method="post" action="<?php echo base_url();?>register">
                     <div class="">
                         <p class="fw-bold">Full Name</p>
-                        <input type="text" class=" input-group form-control " placeholder="Please enter your full name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input name="name" type="text" class=" input-group form-control " placeholder="Please enter your full name" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
                     <div class="">
                         <p class="fw-bold">Username</p>
-                        <input type="text" class=" input-group form-control " placeholder="Please enter your Username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input name="username" type="text" class=" input-group form-control " placeholder="Please enter your Username" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
                     <div class="">
                         <p class="fw-bold">Email</p>
-                        <input type="text" class=" input-group form-control " placeholder="Please enter your Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input name="email" type="text" class=" input-group form-control " placeholder="Please enter your Email" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
                     <div class="">
                         <p class="fw-bold">Password</p>
-                        <input type="text" class=" input-group form-control " placeholder="Please enter your Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input name="password" type="text" class=" input-group form-control " placeholder="Please enter your Password" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     </div>
                     <div class="text-start py-4">
-                        <a href="#" class="btn btn-primary">Submit</a>
+                        <button type="submit" class="btn btn-primary">Submit</button>
 
                     </div>
                 </div>
 
-                
+                </form>
             </div>
     </section>
