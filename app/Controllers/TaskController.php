@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Controllers;
-
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\TaskModel;
@@ -21,7 +20,7 @@ class TaskController extends BaseController
         #$data['status'] = $ktrgn_status;
 
         return view('login/header')
-        .view('dashboard')
+        .view('dashboard',$data)
         .view('login/footer');
     }
     public function task(){

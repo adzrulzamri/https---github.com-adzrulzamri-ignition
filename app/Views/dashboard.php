@@ -9,6 +9,7 @@
             <table class="table table-striped-columns">
                 <thead>
                     <tr>
+                        <th>#</th>
                         <th>Title</th>
                         <th>Description</th>
                         <th>Due date</th>
@@ -19,12 +20,12 @@
                 <tbody class="table-light">
                 <?php $id = 1; foreach ($task as $task):?>    
                 <tr>
-                <td><?=$id?></td>
+                            <th><?=$id?></th>
                             <td><?= $task['title'] ?></td>
                             <td><?= $task['description'] ?></td>
 
                             <td><?=$task['due_date']?></td>
-                            <td><?php echo $status[$task['status']]; ?></td>
+                            <td></td>
                             <td>
                                 <a href="<?php echo base_url(); ?>update/<?= $task['id'] ?>" class="btn btn-warning btn-sm">Update</a>
                                 <a href="<?php echo base_url();?>delete/<?= $task['id'] ?>" class="btn btn-danger btn-sm">Delete</a>
