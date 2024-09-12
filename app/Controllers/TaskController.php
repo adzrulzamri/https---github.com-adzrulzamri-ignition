@@ -10,7 +10,7 @@ class TaskController extends BaseController
 {
     public function index(){
         $taskModel = new TaskModel();
-        $data['tasks'] = $taskModel->findAll();
+        $data['task'] = $taskModel->findAll();
 
         #$ktrgn_status = [
            # '0' => 'Pending',
